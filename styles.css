@@ -1,3 +1,42 @@
 body{
-    padding:50px;
+    padding : 50px;
+    background-color : #e9d4b3;
+    font-family : 'Ubuntu';
+}
+.status-section{
+    border-radius : 20px;
+    padding: 0px 50px 50px 50px;
+    border : 1px solid gray;
+}
+.header-title{
+    padding-top : 10px;
+    text-transform : UPPERCASE;
+    text-align : center;
+}
+.separator{
+    margin-left :40%;
+    padding : 5px;
+    width : 250px;
+    text-align : center;
+    border-bottom:1px solid gray;
+}
+.results .stream-users li{
+    margin:5px;
+    padding :5px;
+    font-family : 'Ubuntu';
+    border-bottom:1px solid gray;
+}
+.results .stream-users li a{
+    text-decoration : none;
+    padding-left : 15%;
+}
+.results .stream-users li a:hover{
+    text-decoration : underline;
+}
+.results .stream-users li span{
+    padding-left : 30%;
+}
+.img-circle{
+    width : 75px;
+    height : 35px;
 }
