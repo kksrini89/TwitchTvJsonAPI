@@ -3,6 +3,9 @@ body{
     background-color : #e9d4b3;
     font-family : 'Ubuntu';
 }
+.active{
+    border : 1px solid #337ab7 !important;
+}
 .status-section{
     border-radius :10px 10px 20px 20px;
     padding: 0px 0px 50px 0px;
@@ -76,11 +79,45 @@ body{
 .results .stream-users li span{
     padding-left : 30%;
 }
+/* Online Streamers - Container*/
 .online-stream-users{
     display:none;
 }
+.results .online-stream-users li{
+    margin:5px;
+    padding :5px;
+    font-family : 'Ubuntu';
+    border-bottom:1px solid gray;
+}
+.results .online-stream-users li a{
+    text-decoration : none;
+    padding-left : 15%;
+}
+.results .online-stream-users li a:hover{
+    text-decoration : underline;
+}
+.results .online-stream-users li span{
+    padding-left : 30%;
+}
+/* Offline Streamers - Container*/
 .offline-stream-users{
     display:none;
+}
+.results .offline-stream-users li{
+    margin:5px;
+    padding :5px;
+    font-family : 'Ubuntu';
+    border-bottom:1px solid gray;
+}
+.results .offline-stream-users li a{
+    text-decoration : none;
+    padding-left : 15%;
+}
+.results .offline-stream-users li a:hover{
+    text-decoration : underline;
+}
+.results .offline-stream-users li span{
+    padding-left : 30%;
 }
 .img-circle{
     width : 75px;
