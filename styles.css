@@ -1,17 +1,54 @@
 body{
-    padding : 50px;
+    padding : 50px 250px 250px 250px;
     background-color : #e9d4b3;
     font-family : 'Ubuntu';
 }
 .status-section{
-    border-radius : 20px;
-    padding: 0px 50px 50px 50px;
+    border-radius :10px 10px 20px 20px;
+    padding: 0px 0px 50px 0px;
     border : 1px solid gray;
 }
+.header-section{
+    background-color : #666;
+    border-radius : 10px 10px 0px 0px;
+    border-bottom : 2px solid white;
+    padding : 25px;
+    color : #FFF;
+    font-size : 24px;
+}
 .header-title{
+    width : 100%;
     padding-top : 10px;
     text-transform : UPPERCASE;
-    text-align : center;
+    text-align : LEFT;
+}
+.availability ul{
+    width : 15%;
+    margin-top : -10%;
+    margin-right : -5%;
+}
+.availability ul li:hover{
+    cursor : pointer;
+}
+.availability span{
+    display : block;
+    width : 100px;
+    border : 1px solid lightgray;
+    margin : 7px;
+    padding : 2px;
+    font-size :11px;
+}
+.availability span i{
+    padding-left:2px;
+}
+.offline-icon{
+    color : orange;
+}
+.online-icon{
+    color : green;
+}
+.all-icon{
+    color : #E7E7E7;
 }
 .separator{
     margin-left :40%;
@@ -19,6 +56,9 @@ body{
     width : 250px;
     text-align : center;
     border-bottom:1px solid gray;
+}
+.results{
+    margin-top: 15px;
 }
 .results .stream-users li{
     margin:5px;
@@ -35,6 +75,12 @@ body{
 }
 .results .stream-users li span{
     padding-left : 30%;
+}
+.online-stream-users{
+    display:none;
+}
+.offline-stream-users{
+    display:none;
 }
 .img-circle{
     width : 75px;
