@@ -25,7 +25,7 @@ $(document).ready(function(){
         console.log(online);
         onlineContainer.empty();
         online.forEach(function(item){
-            onlineContainer.prepend('<li><div><img class="img-circle" src="'+item.channel.logo +'"/><a href='+ item.channel.url +' target="_blank">'+ item.channel.display_name +'</a><span>'+ item.game +'</span></div></li>');
+            onlineContainer.prepend('<li><div><img class="img-circle" src="'+item.channel.logo +'"/><a href='+ item.channel.url +' target="_blank">'+ item.channel.display_name +'</a><span>'+ item.game +':'+item.channel.status +'</span></div></li>');
         });
     });
     $(".offline").on('click',function(){
