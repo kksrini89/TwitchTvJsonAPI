@@ -1,125 +1,115 @@
 body{
-    padding : 50px 250px 250px 250px;
-    background-color : #e9d4b3;
-    font-family : 'Ubuntu';
-}
-.active{
-    border : 1px solid #337ab7 !important;
+  padding:50px;
+  font-family : 'Ubuntu';
 }
 .status-section{
-    border-radius :10px 10px 20px 20px;
-    padding: 0px 0px 50px 0px;
-    border : 1px solid gray;
+  width : 50%;
+  border:1px solid #666;
 }
-.header-section{
-    background-color : #666;
-    border-radius : 10px 10px 0px 0px;
-    border-bottom : 2px solid white;
-    padding : 25px;
-    color : #FFF;
-    font-size : 24px;
+.header-section{  
+  padding: 25px;
+  position: relative;
+  color : #FFF;
+  background-color : #666;
+  border : 1px solid #666;
 }
-.header-title{
-    width : 100%;
-    padding-top : 10px;
-    text-transform : UPPERCASE;
-    text-align : LEFT;
+.header-section h2{
+  text-transform:UPPERCASE;
 }
-.availability ul{
-    width : 15%;
-    margin-top : -10%;
-    margin-right : -5%;
+.availability{
+  position : absolute;
+  right : 0;
+  bottom : 6px;
+}
+.availability ul li{
+  border : 1px solid #777;
+  margin : 5px;
+  padding : 2px;
+  transition:all 0.1s ease-in-out;
 }
 .availability ul li:hover{
-    cursor : pointer;
-}
-.availability span{
-    display : block;
-    width : 100px;
-    border : 1px solid lightgray;
-    margin : 7px;
-    padding : 2px;
-    font-size :11px;
-}
-.availability span i{
-    padding-left:2px;
-}
-.offline-icon{
-    color : orange;
-}
-.online-icon{
-    color : green;
+  cursor : pointer;
+  border : 1px solid #337ab7;
+  transform : scale(1.1,1.2);
 }
 .all-icon{
-    color : #E7E7E7;
+  color : #777;
 }
-.separator{
-    margin-left :40%;
-    padding : 5px;
-    width : 250px;
-    text-align : center;
-    border-bottom:1px solid gray;
+.online-icon{
+  color : green;
 }
-.results{
-    margin-top: 15px;
+.offline-icon{
+  color : orange;
 }
-.results .stream-users li{
-    margin:5px;
-    padding :5px;
-    font-family : 'Ubuntu';
-    border-bottom:1px solid gray;
+.active{
+  border : 1px solid #337ab7 !important;
 }
-.results .stream-users li a{
-    text-decoration : none;
-    padding-left : 15%;
+img{
+  width : 60px;
+  height : 40px;
 }
-.results .stream-users li a:hover{
-    text-decoration : underline;
+/* All streamers */
+.results-section .closed-section{  
+  text-align : center;
+  margin : 2%;
+  vertical-align : middle;
+  padding : 20px;
+  background-color: khaki;
+  border-bottom :1px solid #777;
 }
-.results .stream-users li span{
-    padding-left : 30%;
+.results-section .closed-section a{
+   color : #333;
+  vertical-align : middle;
+  line-height : 30px;
 }
-/* Online Streamers - Container*/
-.online-stream-users{
-    display:none;
+.results-section .closed-section span{
+  padding-left : 5%;
+  vertical-align : middle;
+  line-height : 30px;
 }
-.results .online-stream-users li{
-    margin:5px;
-    padding :5px;
-    font-family : 'Ubuntu';
-    border-bottom:1px solid gray;
+/* Online streamers */
+.results-section .online-section{
+  margin : 2%;  
+  padding : 20px;
+  text-align : center;  
+  vertical-align : middle;  
+  background-color: cornflowerblue;
+  border-bottom :1px solid #777;
 }
-.results .online-stream-users li a{
-    text-decoration : none;
-    padding-left : 15%;
+.results-section .online-section a{
+  color : #FFF;
+  vertical-align : middle;
+  line-height : 30px;
 }
-.results .online-stream-users li a:hover{
-    text-decoration : underline;
+.results-section .online-section span{
+  padding-left:5%;
+  vertical-align : middle;
+  line-height : 30px;
+  color : #FFF;
 }
-.results .online-stream-users li span{
-    padding-left : 30%;
+/* offline streamers */
+.results-section .offline-section{  
+  text-align : center;
+  margin : 2%;
+  vertical-align : middle;
+  padding : 20px;
+  background-color: burlywood;
+  border-bottom :1px solid #777;
 }
-/* Offline Streamers - Container*/
-.offline-stream-users{
-    display:none;
+.results-section .offline-section a{
+   color : #333;
+  vertical-align : middle;
+  line-height : 30px;
 }
-.results .offline-stream-users li{
-    margin:5px;
-    padding :5px;
-    font-family : 'Ubuntu';
-    border-bottom:1px solid gray;
+.results-section .offline-section span{
+  padding-left:5%;
+  vertical-align : middle;
+  line-height : 30px;
 }
-.results .offline-stream-users li a{
-    text-decoration : none;
-    padding-left : 15%;
-}
-.results .offline-stream-users li a:hover{
-    text-decoration : underline;
-}
-.results .offline-stream-users li span{
-    padding-left : 30%;
-}
-.img-circle{
-    width : 75px;
-    height : 35px;
+
+@media (max-width:800px){
+  ul#menu li{
+    display : inline-block;
+    float : left;
+  }
 }
